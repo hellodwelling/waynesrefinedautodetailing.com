@@ -6,25 +6,26 @@
 
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Auto Detailing in Tacoma, WA | Wayne&#x27;s Auto Detailing |  Home</title>
-        <meta name="description" content="Wayne&#x27;s mobile Auto Detailing is Tacoma&#x27;s most trusted Auto Detailing service. We are a customer-first company and you are always a priority.">
-        <!-- <title>ProPhone Templates</title> -->
-        <!-- TailwindCSS  -->
-        <!-- <link rel="stylesheet" type="text/css" href="/staticfiles/landing_page_gen/tailwind.css"> -->
-        <!-- <link rel="stylesheet" type="stylesheet" href="/staticfiles/landing_page_gen/tailwind.css"> -->
-        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css"> -->
-        <link rel="icon" href="https://landing-page-app-hero-images.s3.amazonaws.com/media/f1aa4e70-4afd-434f-be29-0227371d0e78.jpeg" type="image/x-icon">
-        <link rel="stylesheet" href="https://prophone-templates.vercel.app/assets/output.css">
-           
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Auto Detailing in Tacoma, WA | Wayne&#x27;s Refined Auto Detailing |  Home</title>
+    <meta name="description"
+          content="Wayne&#x27;s mobile Auto Detailing is Tacoma&#x27;s most trusted Auto Detailing service. We are a customer-first company and you are always a priority.">
+    <!-- <title>ProPhone Templates</title> -->
+    <!-- TailwindCSS  -->
+    <!-- <link rel="stylesheet" type="text/css" href="/staticfiles/landing_page_gen/tailwind.css"> -->
+    <!-- <link rel="stylesheet" type="stylesheet" href="/staticfiles/landing_page_gen/tailwind.css"> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css"> -->
+    <link rel="icon" href="https://landing-page-app-hero-images.s3.amazonaws.com/media/f1aa4e70-4afd-434f-be29-0227371d0e78.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="https://prophone-templates.vercel.app/assets/output.css">
+      <script>!function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error('Segment snippet included twice.');else{analytics.invoked=!0;analytics.methods=['trackSubmit','trackClick','trackLink','trackForm','pageview','identify','reset','group','track','ready','alias','debug','page','once','off','on','addSourceMiddleware','addIntegrationMiddleware','setAnonymousId','addDestinationMiddleware'];analytics.factory=function(e){return function(){var t=Array.prototype.slice.call(arguments);t.unshift(e);analytics.push(t);return analytics}};for(var e=0;e<analytics.methods.length;e++){var key=analytics.methods[e];analytics[key]=analytics.factory(key)}analytics.load=function(key,e){var t=document.createElement('script');t.type='text/javascript';t.async=!0;t.src='https://cdn.segment.com/analytics.js/v1/' + key + '/analytics.min.js';var n=document.getElementsByTagName('script')[0];n.parentNode.insertBefore(t,n);analytics._loadOptions=e};analytics._writeKey='Z6dq7zq7CtZubdSRrh4EHjCsAasGDPiE';;analytics.SNIPPET_VERSION='4.15.3';analytics.load('Z6dq7zq7CtZubdSRrh4EHjCsAasGDPiE');analytics.page();}}();</script>  
 
-        
-        <link defer href="https://prophone.herokuapp.com/staticfiles/landing_page_gen/output.css" rel="stylesheet">
-        <!-- Include Scripts -->
-        <!-- Header Component, only used for presentation -->
+    
+    <link defer href="https://prophone.herokuapp.com/staticfiles/landing_page_gen/output.css" rel="stylesheet">
+    <!-- Include Scripts -->
+    <!-- Header Component, only used for presentation -->
 
 <!-- Carousel Plugin (can replaced if you already use one) -->
 <script defer src="https://unpkg.com/siema@1.5.1/dist/siema.min.js"></script>
@@ -38,10 +39,10 @@
 <script defer src="https://unpkg.com/alpinejs@3.7.0/dist/cdn.min.js"></script>
 <!-- Focus Visible Polyfill -->
 <script defer src="https://unpkg.com/focus-visible@5.2.0/dist/focus-visible.min.js"></script>
-        <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-        <!-- <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script> -->
-        <style>
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src='https://cdn.tailwindcss.com'></script>
+    <!-- <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script> -->
+    <style>
             :root {
                 /* Settings */
                 --contrastThreshold: 60%;
@@ -61,78 +62,206 @@
                 --switch: calc((var(--color-primary-l) - var(--contrastThreshold)) * -100);
                 --color-primary-foreground: hsl(0, 0%, var(--switch));
             }
-        </style>
-                <script type="text/javascript" defer>
+
+
+
+    </style>
+    <script type="text/javascript" defer>
                     function send_sms(slug){
-                        console.log('send_sms', slug)
+                        console.log('send_sms',1, slug)
+                        function uuidV4() {
+                            return ([1e7]+-1e3+-4e3+-8e3+-1e11).replace(/[018]/g, c =>
+                              (c ^ crypto.getRandomValues(new Uint8Array(1))[0] & 15 >> c / 4).toString(16)
+                            );
+                          }
+
+                        const getFileExtenstion = (dataUrl) =>{
+                            var arr = dataUrl.split(','),
+                                  mime = arr[0].match(/:(.*?);/)[1]
+                            return mime.split('/')[1]
+                        }
+  
+                          const getFileName = (dataUrl) =>{
+                              const uuid = uuidV4()
+                              const fileName = `${uuid}.${getFileExtenstion(dataUrl)}`
+                              return fileName
+                          }
+                          function dataURLtoFile(dataUrl, filename) {
+                              var arr = dataUrl.split(','),
+                                  mime = arr[0].match(/:(.*?);/)[1],
+                                  bstr = atob(arr[1]),
+                                  n = bstr.length,
+                                  u8arr = new Uint8Array(n);
+  
+                              while(n--){
+                                  u8arr[n] = bstr.charCodeAt(n);
+                              }
+  
+                              return new File([u8arr], filename, {type:mime});
+                          }
+                        function uploadFile(file, signedRequest, url) {
+                            return new Promise(function (resolve, reject) {
+                                const xhr = new XMLHttpRequest()
+                                xhr.open('PUT', signedRequest)
+                                xhr.onreadystatechange = () => {
+                                    if (xhr.readyState === 4) {
+                                        if (xhr.status === 200) {
+                                            console.log(url, 'url in uploadFile')
+                                            resolve(file.name)
+                                            //   resolve(url)
+                                        } else {
+                                            alert('Could not upload file.')
+                                        }
+                                    }
+                                }
+                                xhr.send(file)
+                            })
+                        }
+                        
+                        function getSignedRequest(file,fileName) {
+                            return new Promise(function (resolve, reject) {
+                                const xhr = new XMLHttpRequest()
+                                console.log(fileName, 'fileName')
+                                const newUrl = `https://programmable-voice-server-node.herokuapp.com/sign_s3?file_name=${fileName}&file_type=${file.type}`
+                                console.log('newurl', newUrl)
+                                xhr.open('GET', newUrl)
+                                xhr.onreadystatechange = async function () {
+                                    console.log('getSignedRequest - in onreadystatechange - xhr', xhr)
+                                    if (xhr.readyState === 4) {
+                                        if (xhr.status === 200) {
+                                            const response = JSON.parse(xhr.responseText)
+                                            const uploaded = await uploadFile(
+                                                file,
+                                                response.signedRequest,
+                                                response.url
+                                            )
+                                            resolve(fileName)
+                                        } else {
+                                            alert('Could not get signed URL.')
+                                        }
+                                    }
+                                }
+                                console.log('getSignedRequest -pre xhr.send')
+                                xhr.send()
+                            })
+                        }
+                        const get_sender_attachment = ()=>{
+                            var ImageSrc = getIdValue(`#contact-attachment`)
+                            console.log(ImageSrc,"ImageSrc")
+                            if (ImageSrc){
+                                const fileName = getFileName(ImageSrc)
+                                const fileObject = dataURLtoFile(ImageSrc,fileName)
+                                getSignedRequest(fileObject,fileName).then(res => console.log(res))
+                                return fileName
+                            }
+                            return ""
+                        }
+
                         // var sender_fname = $(`#${form_num}-first-name`).val()
                         // var sender_lname = $(`#${form_num}-last-name`).val()
                         // var sender_number = $(`#${form_num}-phone-number`).val()
                         // console.log(sender_number)
                         // var sender_message = $(`#${form_num}-message`).val()
-                        var sender_full_name = $(`#contact-full-name`).val()
-                        var full_name_split = sender_full_name.split(' ')
-                        var sender_fname = full_name_split.shift()
-                        var sender_lname = full_name_split.join(' ')
-                        var sender_number = $(`#contact-phone-number`).val()
-                        var sender_email = $(`#contact-email`).val()
-                        var sender_contact_date = $(`#contact-date`).val()
-                        var sender_promo = $(`#contact-promo-code`).val()
-                        var sender_address = $(`#contact-address`).val()
-                        
-                        // iterate over the service
-                        var sender_service = "" //$(`#contact-phone-number`).val()
-        
-                        
-                        console.log(sender_number)
-                        var sender_message = $(`#contact-concern`).val()
-                        if (!sender_fname || !sender_number || !sender_message){
-                        // if (!sender_fname || !sender_lname || !sender_number || !sender_message){
-                            alert("Please make sure to fill out all the form fields")
-                            return
-                        }
-        
-                        var cleaned_sender_number = sender_number.replace("(", "").replace(")", "").replace("-", "").replace(" ", "")
-                        var sender_services = ""
-        
-                        console.log("text", slug, sender_fname, sender_lname, sender_number, sender_message)
 
-                        fetch('https://prophone.herokuapp.com/sms/' + slug , {
+                        const checkIdExist = (id) =>{
+                            if ($(id).length) return true
+                            return false
+                        }
+
+                        const getIdValue = (id) => {
+                            if (checkIdExist(id)) return $(id).val()
+                            else return ""
+                        }
+                        const getSenderName = () =>{
+                        const sender_full_name = getIdValue(`#contact-full-name`)
+                        if (sender_full_name){
+                            const full_name_split = sender_full_name.split(' ')
+                        const sender_fname = full_name_split.shift()
+                        const sender_lname = full_name_split.join(' ')
+                        return [sender_full_name,sender_fname,sender_lname]
+                        }
+                        else{
+                            return ["","",""]
+                        }
+
+                        }
+                        const getSelectedServices = () =>{
+                            const allSelectedServiced = Array.from(document.querySelectorAll('[id^="contact-service"]'))
+
+                            if (allSelectedServiced.length){
+                                return allSelectedServiced.filter( (x)=> x.checked
+                            ).map(item => item.value).join(",");
+                            }
+                            else {return ""}
+
+                        }
+
+
+                        const [sender_full_name,sender_fname,sender_lname  ]=getSenderName()
+                        var sender_number = getIdValue(`#contact-phone-number`)
+                        var sender_email = getIdValue(`#contact-email`)
+                        var sender_contact_date = getIdValue(`#contact-date`)
+                        var sender_promo = getIdValue(`#contact-promo-code`)
+                        var sender_address = getIdValue(`#contact-address`)
+                        const photo = get_sender_attachment()
+                        console.log(photo,"sender_attachment")
+                        // TODO As services are multiple choice option do user can select only one or user can select multiple option
+                            // discuss about how this should happen
+                        // iterate over the service
+                        const services = getSelectedServices()
+                        // var sender_service = "" //$(`#contact-phone-number`).val()
+
+                        var sender_message = getIdValue(`#contact-concern`)
+                        // TODO add a better validator for each field
+                            // Perform validation before any computation
+
+                        // if (!sender_fname || !sender_number || !sender_message){
+                        // // if (!sender_fname || !sender_lname || !sender_number || !sender_message){
+                        //     alert("Please make sure to fill out all the form fields")
+                        //     return
+                        // }
+
+                        var cleaned_sender_number = sender_number.replace("(", "").replace(")", "").replace("-", "").replace(" ", "")
+
+
+                        console.log("text", slug, sender_fname, sender_lname, sender_number, sender_message)
+                        fetch("https://prosite.prophone.com/sms/" + slug , {
                             method: 'POST',
                             body: JSON.stringify({
                                 sender_full_name : sender_full_name,
                                 sender_email : sender_email,
                                 sender_promo : sender_promo,
-                                sender_services : sender_services,
                                 sender_fname : sender_fname,
                                 sender_lname: sender_lname,
                                 sender_number: cleaned_sender_number,
                                 sender_message: sender_message,
                                 sender_address: sender_address,
-                                sender_contact_date: sender_contact_date
+                                sender_date: sender_contact_date,
+                                photo,
+                                services
                             })
-                            
+
                         })
                         .then(result => {
                             //Here body is not ready yet, throw promise
                             if (!result.ok) throw result;
                             return result.json();
-                        })      
+                        })
                         .then(result => {
                             console.log(result)
                             alert("Your message has been sent!")
                             location.reload()
                         })
-        
-        
-                        
+
+
                     }
+                
                     console.log('go bucks')
                     $('document').ready(function(){
                         console.log('doc ready')
                         let cover = $("#cover-button")
-                        console.log("cover", cover)  
-        
+                        console.log("cover", cover)
+
                         if (cover.position() !== undefined){
                             let cover_bottom = cover.position().top - 40
                             $(window).scroll(function(){
@@ -142,7 +271,7 @@
                                 if ( $("#side-button").hasClass('-translate-x-80')){
                                 $("#side-button").removeClass("-translate-x-80").addClass("translate-x-64")
                                 }
-                                
+
                             }
                             else{
                                 $("#side-button").addClass("transform -translate-x-80 ease-in duration-700");
@@ -151,58 +280,61 @@
                         } else {
                             $("#side-button").addClass("transform -translate-x-80 ease-in duration-700");
                         }
-        
-                        
-                        
+
+
+
                         });
-        
-                </script>
-    </head>
-    <body x-data="{ contactModalOpen: false, applyModalOpen: false, reviewModalOpen: false, textModalOpen: false, galleryModalOpen:false, active: 0 }" class="pt-24 md:pt-44">
-            <!-- <div class="sticky top-0 z-50 pt-8 pb-4 bg-white">
-                <div class="flex items-center justify-between">
-                    <h1 class="text-2xl font-medium tracking-tight">ProPhone Templates</h1>
-                    <div class="flex items-center mt-2 space-x-4 bg-white">
-                        <span class="sr-only">Select Theme</span>
-                        <div class="flex space-x-2">
-                            <button
-                                :class="active === 0 ? 'ring ring-offset-1 ring-[#1e3a8a]' : ''"
-                                x-on:click="active = 0; setPrimary('224', '78%', '33%'); setSecondary('21', '95%', '48%');"
-                                class="relative w-6 h-6 overflow-hidden transition-all -rotate-45 rounded-full hover:scale-110"
-                            >
-                                <div class="h-3 w-6 bg-[#1e3a8a]"></div>
-                                <div class="h-3 w-6 bg-[#ea580c]"></div>
-                            </button>
-                            <button
-                                :class="active === 1 ? 'ring ring-offset-1 ring-[#1E293B]' : ''"
-                                x-on:click="active = 1; setPrimary('217', '33%', '17%'); setSecondary('142', '83%', '45%');"
-                                class="relative w-6 h-6 overflow-hidden transition-all -rotate-45 rounded-full hover:scale-110"
-                            >
-                                <div class="h-3 w-6 bg-[#1E293B]"></div>
-                                <div class="h-3 w-6 bg-[#22C55E]"></div>
-                            </button>
-                            <button
-                                :class="active === 2 ? 'ring ring-offset-1 ring-[#4F46E5]' : ''"
-                                x-on:click="active = 2; setPrimary('243', '69%', '59%'); setSecondary('189', '97%', '43%');"
-                                class="relative w-6 h-6 overflow-hidden transition-all -rotate-45 rounded-full hover:scale-110"
-                            >
-                                <div class="h-3 w-6 bg-[#4F46E5]"></div>
-                                <div class="h-3 w-6 bg-[#06B6D4]"></div>
-                            </button>
-                            <button
-                                :class="active === 3 ? 'ring ring-offset-1 ring-[#f72585]' : ''"
-                                x-on:click="active = 3; setPrimary('333', '85%', '56%'); setSecondary('263', '93%', '35%');"
-                                class="relative w-6 h-6 overflow-hidden transition-all -rotate-45 rounded-full hover:scale-110"
-                            >
-                                <div class="h-3 w-6 bg-[#f72585]"></div>
-                                <div class="h-3 w-6 bg-[#480ca8]"></div>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
-    
-            <nav class="fixed inset-x-0 top-0 z-20">
+
+
+
+
+    </script>
+</head>
+<body x-data="{ contactModalOpen: false, applyModalOpen: false, reviewModalOpen: false, textModalOpen: false, galleryModalOpen:false, active: 0 }" class="pt-24 md:pt-44">
+<!-- <div class="sticky top-0 z-50 pt-8 pb-4 bg-white">
+    <div class="flex items-center justify-between">
+        <h1 class="text-2xl font-medium tracking-tight">ProPhone Templates</h1>
+        <div class="flex items-center mt-2 space-x-4 bg-white">
+            <span class="sr-only">Select Theme</span>
+            <div class="flex space-x-2">
+                <button
+                    :class="active === 0 ? 'ring ring-offset-1 ring-[#1e3a8a]' : ''"
+                    x-on:click="active = 0; setPrimary('224', '78%', '33%'); setSecondary('21', '95%', '48%');"
+                    class="relative w-6 h-6 overflow-hidden transition-all -rotate-45 rounded-full hover:scale-110"
+                >
+                    <div class="h-3 w-6 bg-[#1e3a8a]"></div>
+                    <div class="h-3 w-6 bg-[#ea580c]"></div>
+                </button>
+                <button
+                    :class="active === 1 ? 'ring ring-offset-1 ring-[#1E293B]' : ''"
+                    x-on:click="active = 1; setPrimary('217', '33%', '17%'); setSecondary('142', '83%', '45%');"
+                    class="relative w-6 h-6 overflow-hidden transition-all -rotate-45 rounded-full hover:scale-110"
+                >
+                    <div class="h-3 w-6 bg-[#1E293B]"></div>
+                    <div class="h-3 w-6 bg-[#22C55E]"></div>
+                </button>
+                <button
+                    :class="active === 2 ? 'ring ring-offset-1 ring-[#4F46E5]' : ''"
+                    x-on:click="active = 2; setPrimary('243', '69%', '59%'); setSecondary('189', '97%', '43%');"
+                    class="relative w-6 h-6 overflow-hidden transition-all -rotate-45 rounded-full hover:scale-110"
+                >
+                    <div class="h-3 w-6 bg-[#4F46E5]"></div>
+                    <div class="h-3 w-6 bg-[#06B6D4]"></div>
+                </button>
+                <button
+                    :class="active === 3 ? 'ring ring-offset-1 ring-[#f72585]' : ''"
+                    x-on:click="active = 3; setPrimary('333', '85%', '56%'); setSecondary('263', '93%', '35%');"
+                    class="relative w-6 h-6 overflow-hidden transition-all -rotate-45 rounded-full hover:scale-110"
+                >
+                    <div class="h-3 w-6 bg-[#f72585]"></div>
+                    <div class="h-3 w-6 bg-[#480ca8]"></div>
+                </button>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+<nav class="fixed inset-x-0 top-0 z-20">
     <div
         x-data="{ navOpen: false, scrolledFromTop: false, mobileOpen: false }"
         x-init="window.pageYOffset >= 50 ? scrolledFromTop = true : scrolledFromTop = false"
@@ -250,9 +382,9 @@
                                 
                                     <a
                                         href=" index "
-                                        class=" 'border-secondary'  group pb-5 pt-6 inline-flex items-center px-1 transition text-sm font-medium border-b-2 focus:ring-2 focus:outline-none ring-primary ring-opacity-75 ring-offset-2"
+                                        class=" border-secondary hover:border-gray-300   group pb-5 pt-6 inline-flex items-center px-1 transition text-sm font-medium  border-b-2 text-gray-900  focus:ring-2 focus:outline-none ring-primary ring-opacity-75 ring-offset-2"
                                     >
-                                        Home
+                                        Home 
                                     </a>
                                 <!-- </else> -->
                                 
@@ -485,9 +617,9 @@
                                 
                                     <a
                                         href=" reviews "
-                                        class=" 'border-transparent hover:border-gray-300 hover:text-gray-700 text-gray-500'  group pb-5 pt-6 inline-flex items-center px-1 transition text-sm font-medium border-b-2 focus:ring-2 focus:outline-none ring-primary ring-opacity-75 ring-offset-2"
+                                        class=" border-transparent hover:border-gray-300 hover:text-gray-700 text-gray-500  group pb-5 pt-6 inline-flex items-center px-1 transition text-sm font-medium  text-gray-500  focus:ring-2 focus:outline-none ring-primary ring-opacity-75 ring-offset-2"
                                     >
-                                        Reviews
+                                        Reviews 
                                     </a>
                                 <!-- </else> -->
                                 
@@ -796,7 +928,7 @@
     </div>
 </nav>
 
-            <div
+<div
     x-data="{ buttonVisible: false }"
     x-init="buttonVisible = window.pageYOffset >= 400 && (window.innerHeight + window.pageYOffset) <= document.body.scrollHeight - 500"
     @scroll.window="window.pageYOffset >= 400 && (window.innerHeight + window.scrollY) <= document.body.scrollHeight - 500 ? buttonVisible = true : buttonVisible = false"
@@ -824,9 +956,9 @@
 </div>
 
 
-            
-                 
-                    <div class="relative overflow-hidden bg-primary">
+
+
+<div class="relative overflow-hidden bg-primary">
     <div class="mx-auto max-w-7xl">
         <div class="relative z-10 py-8 bg-primary text-white sm:py-16 md:py-20 lg:max-w-2xl lg:w-full lg:py-28 xl:py-32">
             <svg
@@ -843,7 +975,7 @@
             <main class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
                 <div class="sm:text-center lg:text-left">
                     <h1 class="text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl">
-                        <span class="block xl:inline">Wayne&#x27;s Auto Detailing</span>
+                        <span class="block xl:inline">Wayne&#x27;s Refined Auto Detailing</span>
                     </h1>
                     <p class="mt-3 text-base sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
                         Quality mobile Auto Detailing service in Tacoma and surrounding areas. We provide professional service and offer free quotes. Reach out today to learn how we can help.
@@ -934,7 +1066,7 @@
                 class="object-cover w-full h-72 md:h-96 lg:w-full lg:h-full"
                 src="https://landing-page-app-hero-images.s3.amazonaws.com/media/40048ed2-e04d-478b-96af-bf679bfa9699.png"
                 loading="lazy"
-                alt="Auto Detailing company Wayne&#x27;s Auto Detailing in Tacoma, WA"
+                alt="Auto Detailing company Wayne&#x27;s Refined Auto Detailing in Tacoma, WA"
             />
         </div>
         
@@ -952,7 +1084,7 @@
                 class="object-cover w-full h-72 md:h-96 lg:w-full lg:h-full"
                 src="https://landing-page-app-hero-images.s3.amazonaws.com/media/c380c6af-164b-4ad7-9f08-751a4fa2188e.jpeg"
                 loading="lazy"
-                alt="Auto Detailing company Wayne&#x27;s Auto Detailing in Tacoma, WA"
+                alt="Auto Detailing company Wayne&#x27;s Refined Auto Detailing in Tacoma, WA"
             />
         </div>
         
@@ -970,7 +1102,7 @@
                 class="object-cover w-full h-72 md:h-96 lg:w-full lg:h-full"
                 src="https://landing-page-app-hero-images.s3.amazonaws.com/media/21996202-5630-4efb-814d-47880e95bae4.png"
                 loading="lazy"
-                alt="Auto Detailing company Wayne&#x27;s Auto Detailing in Tacoma, WA"
+                alt="Auto Detailing company Wayne&#x27;s Refined Auto Detailing in Tacoma, WA"
             />
         </div>
         
@@ -978,7 +1110,7 @@
     </div>
     
 </div>
-                    <!-- Logo With Text Grid Component -->
+<!-- Logo With Text Grid Component -->
 <section class="bg-white">
     <div class="px-4 py-12 mx-auto text-center max-w-7xl sm:px-6 lg:py-16 lg:px-8">
         <!-- Find a description here so screenreader users know what's going on in this section. -->
@@ -1062,7 +1194,7 @@
     </div>
 </section>
 
-                    <section class="pt-16 bg-white lg:py-24">
+<section class="pt-16 bg-white lg:py-24">
   <div class="pb-16 bg-gray-50 lg:pb-0 lg:z-10 lg:relative">
       <div class="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:gap-8">
           <!-- Image -->
@@ -1085,7 +1217,7 @@
                                   
                                       <img 
                                         src="https://landing-page-app-hero-images.s3.amazonaws.com/media/b0596815-f639-4850-8973-beb187deea30.jpeg"
-                                        alt="Wayne&#x27;s Auto Detailing team in Tacoma, WA - people or person"
+                                        alt="Wayne&#x27;s Refined Auto Detailing team in Tacoma, WA - people or person"
                                         class="w-auto h-auto max-h-full max-w-full"
                                         loading="lazy"
                                       >
@@ -1164,7 +1296,7 @@ Our Guarantee: Expert quality every time. We don&#x27;t consider a job done unti
   </div>
 </section>
 
-                    <!-- Logo Grid Component -->
+<!-- Logo Grid Component -->
 <section class="bg-white">
     <div class="px-4 py-12 mx-auto text-center max-w-7xl sm:px-6 lg:py-16 lg:px-8">
         <!-- Find a description here so screenreader users know what's going on in this section. -->
@@ -1175,7 +1307,7 @@ Our Guarantee: Expert quality every time. We don&#x27;t consider a job done unti
     </div>
 </section>
 
-                    <!-- Our Services Component -->
+<!-- Our Services Component -->
 <section x-data="{ showMore: false }" class="overflow-hidden bg-white" id="services">
     <div class="relative px-4 py-12 mx-auto max-w-7xl sm:px-6 lg:py-16 lg:px-8">
         <!-- Decorative Dots with Slide-in (right) animation -->
@@ -1237,6 +1369,7 @@ Our Guarantee: Expert quality every time. We don&#x27;t consider a job done unti
                         class="group service-item"
                     >
                         <!-- Whole Card is a link -->
+                        <!-- Confirm item.href -->
                         <a
                             href="service-Interior-Detailing"
                             style="transform-style: preserve-3d"
@@ -1278,11 +1411,13 @@ Our Guarantee: Expert quality every time. We don&#x27;t consider a job done unti
                             <!-- Colored Overlay -->
                             <div aria-hidden="true" class="absolute inset-0 z-10 opacity-75 bg-secondary"></div>
                             <!-- Image -->
+                            
                             <img
                                 class="object-cover grayscale"
-                                src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=414&q=80"
+                    src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/f5864ed7-58ce-4446-8dcc-caf96ca35c5e.jpeg" alt="Our Interior Detailing service is the perfect way to keep your car&#x27;s interior looking like new. We use high-quality products and techniques to clean and protect your car&#x27;s upholstery, carpets, and floor mats. for Wayne&#x27;s Refined Auto Detailing in Tacoma, WA" loading="lazy"
                                 alt=""
                             />
+                            
                         </a>
                     </li>
                 
@@ -1292,6 +1427,7 @@ Our Guarantee: Expert quality every time. We don&#x27;t consider a job done unti
                         class="group service-item"
                     >
                         <!-- Whole Card is a link -->
+                        <!-- Confirm item.href -->
                         <a
                             href="service-Maintenance-Wash"
                             style="transform-style: preserve-3d"
@@ -1333,11 +1469,13 @@ Our Guarantee: Expert quality every time. We don&#x27;t consider a job done unti
                             <!-- Colored Overlay -->
                             <div aria-hidden="true" class="absolute inset-0 z-10 opacity-75 bg-secondary"></div>
                             <!-- Image -->
+                            
                             <img
                                 class="object-cover grayscale"
-                                src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=414&q=80"
+                    src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/21996202-5630-4efb-814d-47880e95bae4.png" alt="We offer a Maintenance Wash service to keep your car looking clean and new between full detailing services. This includes a wash, wax, and interior cleaning. for Wayne&#x27;s Refined Auto Detailing in Tacoma, WA" loading="lazy"
                                 alt=""
                             />
+                            
                         </a>
                     </li>
                 
@@ -1347,6 +1485,7 @@ Our Guarantee: Expert quality every time. We don&#x27;t consider a job done unti
                         class="group service-item"
                     >
                         <!-- Whole Card is a link -->
+                        <!-- Confirm item.href -->
                         <a
                             href="service-Exterior-Detailing"
                             style="transform-style: preserve-3d"
@@ -1388,11 +1527,13 @@ Our Guarantee: Expert quality every time. We don&#x27;t consider a job done unti
                             <!-- Colored Overlay -->
                             <div aria-hidden="true" class="absolute inset-0 z-10 opacity-75 bg-secondary"></div>
                             <!-- Image -->
+                            
                             <img
                                 class="object-cover grayscale"
-                                src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=414&q=80"
+                    src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/b0e344e1-5639-45e5-af80-643a9ff51590.jpeg" alt="If you are looking for a high-quality, thorough exterior detailing service, our team is here to help. We will clean and polish your car&#x27;s body, windows, and tires to make it look like new again. Contact us today to schedule your appointment! for Wayne&#x27;s Refined Auto Detailing in Tacoma, WA" loading="lazy"
                                 alt=""
                             />
+                            
                         </a>
                     </li>
                 
@@ -1402,6 +1543,7 @@ Our Guarantee: Expert quality every time. We don&#x27;t consider a job done unti
                         class="group service-item"
                     >
                         <!-- Whole Card is a link -->
+                        <!-- Confirm item.href -->
                         <a
                             href="service-Full-Detail-Service"
                             style="transform-style: preserve-3d"
@@ -1443,11 +1585,13 @@ Our Guarantee: Expert quality every time. We don&#x27;t consider a job done unti
                             <!-- Colored Overlay -->
                             <div aria-hidden="true" class="absolute inset-0 z-10 opacity-75 bg-secondary"></div>
                             <!-- Image -->
+                            
                             <img
                                 class="object-cover grayscale"
-                                src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=414&q=80"
+                    src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/dfa5d856-9a2d-4f25-9734-2d1c5de11ac8.jpeg" alt="Our Full Detail service is a comprehensive, top-to-bottom cleaning of your car that includes all the services of our Basic and Deluxe Detailing services combined. We&#x27;ll meticulously clean every nook and cranny inside and out, restoring your car to its former glory! for Wayne&#x27;s Refined Auto Detailing in Tacoma, WA" loading="lazy"
                                 alt=""
                             />
+                            
                         </a>
                     </li>
                 
@@ -1483,7 +1627,7 @@ Our Guarantee: Expert quality every time. We don&#x27;t consider a job done unti
         }
     }
 </script>
-                    <!-- CTA Component -->
+<!-- CTA Component -->
 <section class="bg-white">
     <div class="px-4 py-12 mx-auto text-center max-w-7xl sm:px-6 lg:py-16 lg:px-8">
         <!-- Heading -->
@@ -1528,8 +1672,8 @@ Our Guarantee: Expert quality every time. We don&#x27;t consider a job done unti
     </div>
 </section>
 
-                    
-                        <section class="bg-white">
+
+<section class="bg-white">
     <!-- Header -->
     <div class="relative pb-32 bg-primary">
         <div class="relative px-4 py-24 mx-auto max-w-7xl sm:px-6 lg:px-8">
@@ -1636,8 +1780,8 @@ Our Guarantee: Expert quality every time. We don&#x27;t consider a job done unti
     </div>
 </section>
 
-                    
-                    <!-- Our Best Work Component -->
+
+<!-- Our Best Work Component -->
 <section class="overflow-hidden bg-white" id="gallery">
     <div class="relative px-4 py-12 mx-auto max-w-7xl sm:px-6 lg:py-24 lg:px-8">
         <!-- Heading -->
@@ -1693,7 +1837,7 @@ Our Guarantee: Expert quality every time. We don&#x27;t consider a job done unti
                         <div class="aspect-w-3 aspect-h-2">
                             <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/46fcabbd-ddc8-42a1-8a3d-ce049433e858.jpeg" alt="" /> -->
                              
-                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/46fcabbd-ddc8-42a1-8a3d-ce049433e858.jpeg" alt="Interior Detailing for Wayne&#x27;s Auto Detailing in Tacoma, WA" loading="lazy"/> 
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/46fcabbd-ddc8-42a1-8a3d-ce049433e858.jpeg" alt="Interior Detailing for Wayne&#x27;s Refined Auto Detailing in Tacoma, WA" loading="lazy"/> 
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/46fcabbd-ddc8-42a1-8a3d-ce049433e858.jpeg" alt="" /> -->
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/46fcabbd-ddc8-42a1-8a3d-ce049433e858.jpeg" alt="" /> -->
                             
@@ -1714,7 +1858,7 @@ Our Guarantee: Expert quality every time. We don&#x27;t consider a job done unti
                         <div class="aspect-w-3 aspect-h-2">
                             <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/40048ed2-e04d-478b-96af-bf679bfa9699.png" alt="" /> -->
                              
-                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/40048ed2-e04d-478b-96af-bf679bfa9699.png" alt="Interior Detailing for Wayne&#x27;s Auto Detailing in Tacoma, WA" loading="lazy"/> 
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/40048ed2-e04d-478b-96af-bf679bfa9699.png" alt="Interior Detailing for Wayne&#x27;s Refined Auto Detailing in Tacoma, WA" loading="lazy"/> 
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/40048ed2-e04d-478b-96af-bf679bfa9699.png" alt="" /> -->
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/40048ed2-e04d-478b-96af-bf679bfa9699.png" alt="" /> -->
                             
@@ -1733,11 +1877,11 @@ Our Guarantee: Expert quality every time. We don&#x27;t consider a job done unti
                 <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
                     <button @click="activeImage = 2; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
                         <div class="aspect-w-3 aspect-h-2">
-                            <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/c380c6af-164b-4ad7-9f08-751a4fa2188e.jpeg" alt="" /> -->
+                            <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/19e1dea8-68bd-44b7-a3b7-fc3aa6228d12.jpeg" alt="" /> -->
                              
-                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/c380c6af-164b-4ad7-9f08-751a4fa2188e.jpeg" alt="Interior Detailing for Wayne&#x27;s Auto Detailing in Tacoma, WA" loading="lazy"/> 
-                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/c380c6af-164b-4ad7-9f08-751a4fa2188e.jpeg" alt="" /> -->
-                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/c380c6af-164b-4ad7-9f08-751a4fa2188e.jpeg" alt="" /> -->
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/19e1dea8-68bd-44b7-a3b7-fc3aa6228d12.jpeg" alt="Interior Detailing for Wayne&#x27;s Refined Auto Detailing in Tacoma, WA" loading="lazy"/> 
+                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/19e1dea8-68bd-44b7-a3b7-fc3aa6228d12.jpeg" alt="" /> -->
+                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/19e1dea8-68bd-44b7-a3b7-fc3aa6228d12.jpeg" alt="" /> -->
                             
                         </div>
 
@@ -1754,11 +1898,11 @@ Our Guarantee: Expert quality every time. We don&#x27;t consider a job done unti
                 <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
                     <button @click="activeImage = 3; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
                         <div class="aspect-w-3 aspect-h-2">
-                            <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/19e1dea8-68bd-44b7-a3b7-fc3aa6228d12.jpeg" alt="" /> -->
+                            <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/c380c6af-164b-4ad7-9f08-751a4fa2188e.jpeg" alt="" /> -->
                              
-                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/19e1dea8-68bd-44b7-a3b7-fc3aa6228d12.jpeg" alt="Interior Detailing for Wayne&#x27;s Auto Detailing in Tacoma, WA" loading="lazy"/> 
-                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/19e1dea8-68bd-44b7-a3b7-fc3aa6228d12.jpeg" alt="" /> -->
-                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/19e1dea8-68bd-44b7-a3b7-fc3aa6228d12.jpeg" alt="" /> -->
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/c380c6af-164b-4ad7-9f08-751a4fa2188e.jpeg" alt="Interior Detailing for Wayne&#x27;s Refined Auto Detailing in Tacoma, WA" loading="lazy"/> 
+                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/c380c6af-164b-4ad7-9f08-751a4fa2188e.jpeg" alt="" /> -->
+                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/c380c6af-164b-4ad7-9f08-751a4fa2188e.jpeg" alt="" /> -->
                             
                         </div>
 
@@ -1777,7 +1921,7 @@ Our Guarantee: Expert quality every time. We don&#x27;t consider a job done unti
                         <div class="aspect-w-3 aspect-h-2">
                             <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/051c6d14-a95f-4cd0-be9b-fc40c1ee8f28.jpeg" alt="" /> -->
                              
-                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/051c6d14-a95f-4cd0-be9b-fc40c1ee8f28.jpeg" alt="Interior Detailing for Wayne&#x27;s Auto Detailing in Tacoma, WA" loading="lazy"/> 
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/051c6d14-a95f-4cd0-be9b-fc40c1ee8f28.jpeg" alt="Interior Detailing for Wayne&#x27;s Refined Auto Detailing in Tacoma, WA" loading="lazy"/> 
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/051c6d14-a95f-4cd0-be9b-fc40c1ee8f28.jpeg" alt="" /> -->
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/051c6d14-a95f-4cd0-be9b-fc40c1ee8f28.jpeg" alt="" /> -->
                             
@@ -1798,7 +1942,7 @@ Our Guarantee: Expert quality every time. We don&#x27;t consider a job done unti
                         <div class="aspect-w-3 aspect-h-2">
                             <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/21996202-5630-4efb-814d-47880e95bae4.png" alt="" /> -->
                              
-                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/21996202-5630-4efb-814d-47880e95bae4.png" alt="Interior Detailing for Wayne&#x27;s Auto Detailing in Tacoma, WA" loading="lazy"/> 
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/21996202-5630-4efb-814d-47880e95bae4.png" alt="Interior Detailing for Wayne&#x27;s Refined Auto Detailing in Tacoma, WA" loading="lazy"/> 
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/21996202-5630-4efb-814d-47880e95bae4.png" alt="" /> -->
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/21996202-5630-4efb-814d-47880e95bae4.png" alt="" /> -->
                             
@@ -1819,7 +1963,7 @@ Our Guarantee: Expert quality every time. We don&#x27;t consider a job done unti
                         <div class="aspect-w-3 aspect-h-2">
                             <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/e7770b61-fc72-4601-b256-5814ad60fb52.jpeg" alt="" /> -->
                              
-                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/e7770b61-fc72-4601-b256-5814ad60fb52.jpeg" alt="Interior Detailing for Wayne&#x27;s Auto Detailing in Tacoma, WA" loading="lazy"/> 
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/e7770b61-fc72-4601-b256-5814ad60fb52.jpeg" alt="Interior Detailing for Wayne&#x27;s Refined Auto Detailing in Tacoma, WA" loading="lazy"/> 
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/e7770b61-fc72-4601-b256-5814ad60fb52.jpeg" alt="" /> -->
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/e7770b61-fc72-4601-b256-5814ad60fb52.jpeg" alt="" /> -->
                             
@@ -1840,7 +1984,7 @@ Our Guarantee: Expert quality every time. We don&#x27;t consider a job done unti
                         <div class="aspect-w-3 aspect-h-2">
                             <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/b0e344e1-5639-45e5-af80-643a9ff51590.jpeg" alt="" /> -->
                              
-                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/b0e344e1-5639-45e5-af80-643a9ff51590.jpeg" alt="Interior Detailing for Wayne&#x27;s Auto Detailing in Tacoma, WA" loading="lazy"/> 
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/b0e344e1-5639-45e5-af80-643a9ff51590.jpeg" alt="Interior Detailing for Wayne&#x27;s Refined Auto Detailing in Tacoma, WA" loading="lazy"/> 
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/b0e344e1-5639-45e5-af80-643a9ff51590.jpeg" alt="" /> -->
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/b0e344e1-5639-45e5-af80-643a9ff51590.jpeg" alt="" /> -->
                             
@@ -1861,7 +2005,7 @@ Our Guarantee: Expert quality every time. We don&#x27;t consider a job done unti
                         <div class="aspect-w-3 aspect-h-2">
                             <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/61b2ab5d-9499-4e91-b134-fbc02e4528bb.jpeg" alt="" /> -->
                              
-                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/61b2ab5d-9499-4e91-b134-fbc02e4528bb.jpeg" alt="Interior Detailing for Wayne&#x27;s Auto Detailing in Tacoma, WA" loading="lazy"/> 
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/61b2ab5d-9499-4e91-b134-fbc02e4528bb.jpeg" alt="Interior Detailing for Wayne&#x27;s Refined Auto Detailing in Tacoma, WA" loading="lazy"/> 
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/61b2ab5d-9499-4e91-b134-fbc02e4528bb.jpeg" alt="" /> -->
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/61b2ab5d-9499-4e91-b134-fbc02e4528bb.jpeg" alt="" /> -->
                             
@@ -1882,7 +2026,7 @@ Our Guarantee: Expert quality every time. We don&#x27;t consider a job done unti
                         <div class="aspect-w-3 aspect-h-2">
                             <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/dfa5d856-9a2d-4f25-9734-2d1c5de11ac8.jpeg" alt="" /> -->
                              
-                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/dfa5d856-9a2d-4f25-9734-2d1c5de11ac8.jpeg" alt="Interior Detailing for Wayne&#x27;s Auto Detailing in Tacoma, WA" loading="lazy"/> 
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/dfa5d856-9a2d-4f25-9734-2d1c5de11ac8.jpeg" alt="Interior Detailing for Wayne&#x27;s Refined Auto Detailing in Tacoma, WA" loading="lazy"/> 
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/dfa5d856-9a2d-4f25-9734-2d1c5de11ac8.jpeg" alt="" /> -->
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/dfa5d856-9a2d-4f25-9734-2d1c5de11ac8.jpeg" alt="" /> -->
                             
@@ -1903,7 +2047,7 @@ Our Guarantee: Expert quality every time. We don&#x27;t consider a job done unti
                         <div class="aspect-w-3 aspect-h-2">
                             <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/00fc5b8a-c91a-4580-b4eb-129a50cd36c6.jpeg" alt="" /> -->
                              
-                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/00fc5b8a-c91a-4580-b4eb-129a50cd36c6.jpeg" alt="Interior Detailing for Wayne&#x27;s Auto Detailing in Tacoma, WA" loading="lazy"/> 
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/00fc5b8a-c91a-4580-b4eb-129a50cd36c6.jpeg" alt="Interior Detailing for Wayne&#x27;s Refined Auto Detailing in Tacoma, WA" loading="lazy"/> 
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/00fc5b8a-c91a-4580-b4eb-129a50cd36c6.jpeg" alt="" /> -->
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/00fc5b8a-c91a-4580-b4eb-129a50cd36c6.jpeg" alt="" /> -->
                             
@@ -1924,7 +2068,7 @@ Our Guarantee: Expert quality every time. We don&#x27;t consider a job done unti
                         <div class="aspect-w-3 aspect-h-2">
                             <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/c93a7408-e490-4946-b6a7-f24eeb194b34.jpeg" alt="" /> -->
                              
-                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/c93a7408-e490-4946-b6a7-f24eeb194b34.jpeg" alt="Interior Detailing for Wayne&#x27;s Auto Detailing in Tacoma, WA" loading="lazy"/> 
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/c93a7408-e490-4946-b6a7-f24eeb194b34.jpeg" alt="Interior Detailing for Wayne&#x27;s Refined Auto Detailing in Tacoma, WA" loading="lazy"/> 
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/c93a7408-e490-4946-b6a7-f24eeb194b34.jpeg" alt="" /> -->
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/c93a7408-e490-4946-b6a7-f24eeb194b34.jpeg" alt="" /> -->
                             
@@ -1945,7 +2089,7 @@ Our Guarantee: Expert quality every time. We don&#x27;t consider a job done unti
                         <div class="aspect-w-3 aspect-h-2">
                             <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/614a9d14-fa47-40fc-b162-6614c851efd8.jpeg" alt="" /> -->
                              
-                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/614a9d14-fa47-40fc-b162-6614c851efd8.jpeg" alt="Interior Detailing for Wayne&#x27;s Auto Detailing in Tacoma, WA" loading="lazy"/> 
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/614a9d14-fa47-40fc-b162-6614c851efd8.jpeg" alt="Interior Detailing for Wayne&#x27;s Refined Auto Detailing in Tacoma, WA" loading="lazy"/> 
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/614a9d14-fa47-40fc-b162-6614c851efd8.jpeg" alt="" /> -->
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/614a9d14-fa47-40fc-b162-6614c851efd8.jpeg" alt="" /> -->
                             
@@ -1966,7 +2110,7 @@ Our Guarantee: Expert quality every time. We don&#x27;t consider a job done unti
                         <div class="aspect-w-3 aspect-h-2">
                             <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/ab2418d2-cb0b-4e23-a9d5-2e4c423c555e.jpeg" alt="" /> -->
                              
-                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/ab2418d2-cb0b-4e23-a9d5-2e4c423c555e.jpeg" alt="Interior Detailing for Wayne&#x27;s Auto Detailing in Tacoma, WA" loading="lazy"/> 
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/ab2418d2-cb0b-4e23-a9d5-2e4c423c555e.jpeg" alt="Interior Detailing for Wayne&#x27;s Refined Auto Detailing in Tacoma, WA" loading="lazy"/> 
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/ab2418d2-cb0b-4e23-a9d5-2e4c423c555e.jpeg" alt="" /> -->
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/ab2418d2-cb0b-4e23-a9d5-2e4c423c555e.jpeg" alt="" /> -->
                             
@@ -1987,7 +2131,7 @@ Our Guarantee: Expert quality every time. We don&#x27;t consider a job done unti
                         <div class="aspect-w-3 aspect-h-2">
                             <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/18438d3a-6782-4af5-a746-97126d12eaa7.jpeg" alt="" /> -->
                              
-                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/18438d3a-6782-4af5-a746-97126d12eaa7.jpeg" alt="Interior Detailing for Wayne&#x27;s Auto Detailing in Tacoma, WA" loading="lazy"/> 
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/18438d3a-6782-4af5-a746-97126d12eaa7.jpeg" alt="Interior Detailing for Wayne&#x27;s Refined Auto Detailing in Tacoma, WA" loading="lazy"/> 
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/18438d3a-6782-4af5-a746-97126d12eaa7.jpeg" alt="" /> -->
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/18438d3a-6782-4af5-a746-97126d12eaa7.jpeg" alt="" /> -->
                             
@@ -2008,7 +2152,7 @@ Our Guarantee: Expert quality every time. We don&#x27;t consider a job done unti
                         <div class="aspect-w-3 aspect-h-2">
                             <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/bbb5950f-d55c-40e8-bd8a-484e43b55cb5.jpeg" alt="" /> -->
                              
-                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/bbb5950f-d55c-40e8-bd8a-484e43b55cb5.jpeg" alt="Interior Detailing for Wayne&#x27;s Auto Detailing in Tacoma, WA" loading="lazy"/> 
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/bbb5950f-d55c-40e8-bd8a-484e43b55cb5.jpeg" alt="Interior Detailing for Wayne&#x27;s Refined Auto Detailing in Tacoma, WA" loading="lazy"/> 
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/bbb5950f-d55c-40e8-bd8a-484e43b55cb5.jpeg" alt="" /> -->
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/bbb5950f-d55c-40e8-bd8a-484e43b55cb5.jpeg" alt="" /> -->
                             
@@ -2073,7 +2217,7 @@ Our Guarantee: Expert quality every time. We don&#x27;t consider a job done unti
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 0">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/46fcabbd-ddc8-42a1-8a3d-ce049433e858.jpeg" alt="Interior Detailing for Wayne&#x27;s Auto Detailing in Tacoma, WA" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/46fcabbd-ddc8-42a1-8a3d-ce049433e858.jpeg" alt="Interior Detailing for Wayne&#x27;s Refined Auto Detailing in Tacoma, WA" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -2081,7 +2225,7 @@ Our Guarantee: Expert quality every time. We don&#x27;t consider a job done unti
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 1">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/40048ed2-e04d-478b-96af-bf679bfa9699.png" alt="Interior Detailing for Wayne&#x27;s Auto Detailing in Tacoma, WA" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/40048ed2-e04d-478b-96af-bf679bfa9699.png" alt="Interior Detailing for Wayne&#x27;s Refined Auto Detailing in Tacoma, WA" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -2089,7 +2233,7 @@ Our Guarantee: Expert quality every time. We don&#x27;t consider a job done unti
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 2">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/c380c6af-164b-4ad7-9f08-751a4fa2188e.jpeg" alt="Interior Detailing for Wayne&#x27;s Auto Detailing in Tacoma, WA" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/19e1dea8-68bd-44b7-a3b7-fc3aa6228d12.jpeg" alt="Interior Detailing for Wayne&#x27;s Refined Auto Detailing in Tacoma, WA" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -2097,7 +2241,7 @@ Our Guarantee: Expert quality every time. We don&#x27;t consider a job done unti
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 3">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/19e1dea8-68bd-44b7-a3b7-fc3aa6228d12.jpeg" alt="Interior Detailing for Wayne&#x27;s Auto Detailing in Tacoma, WA" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/c380c6af-164b-4ad7-9f08-751a4fa2188e.jpeg" alt="Interior Detailing for Wayne&#x27;s Refined Auto Detailing in Tacoma, WA" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -2105,7 +2249,7 @@ Our Guarantee: Expert quality every time. We don&#x27;t consider a job done unti
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 4">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/051c6d14-a95f-4cd0-be9b-fc40c1ee8f28.jpeg" alt="Interior Detailing for Wayne&#x27;s Auto Detailing in Tacoma, WA" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/051c6d14-a95f-4cd0-be9b-fc40c1ee8f28.jpeg" alt="Interior Detailing for Wayne&#x27;s Refined Auto Detailing in Tacoma, WA" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -2113,7 +2257,7 @@ Our Guarantee: Expert quality every time. We don&#x27;t consider a job done unti
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 5">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/21996202-5630-4efb-814d-47880e95bae4.png" alt="Interior Detailing for Wayne&#x27;s Auto Detailing in Tacoma, WA" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/21996202-5630-4efb-814d-47880e95bae4.png" alt="Interior Detailing for Wayne&#x27;s Refined Auto Detailing in Tacoma, WA" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -2121,7 +2265,7 @@ Our Guarantee: Expert quality every time. We don&#x27;t consider a job done unti
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 6">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/e7770b61-fc72-4601-b256-5814ad60fb52.jpeg" alt="Interior Detailing for Wayne&#x27;s Auto Detailing in Tacoma, WA" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/e7770b61-fc72-4601-b256-5814ad60fb52.jpeg" alt="Interior Detailing for Wayne&#x27;s Refined Auto Detailing in Tacoma, WA" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -2129,7 +2273,7 @@ Our Guarantee: Expert quality every time. We don&#x27;t consider a job done unti
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 7">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/b0e344e1-5639-45e5-af80-643a9ff51590.jpeg" alt="Interior Detailing for Wayne&#x27;s Auto Detailing in Tacoma, WA" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/b0e344e1-5639-45e5-af80-643a9ff51590.jpeg" alt="Interior Detailing for Wayne&#x27;s Refined Auto Detailing in Tacoma, WA" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -2137,7 +2281,7 @@ Our Guarantee: Expert quality every time. We don&#x27;t consider a job done unti
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 8">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/61b2ab5d-9499-4e91-b134-fbc02e4528bb.jpeg" alt="Interior Detailing for Wayne&#x27;s Auto Detailing in Tacoma, WA" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/61b2ab5d-9499-4e91-b134-fbc02e4528bb.jpeg" alt="Interior Detailing for Wayne&#x27;s Refined Auto Detailing in Tacoma, WA" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -2145,7 +2289,7 @@ Our Guarantee: Expert quality every time. We don&#x27;t consider a job done unti
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 9">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/dfa5d856-9a2d-4f25-9734-2d1c5de11ac8.jpeg" alt="Interior Detailing for Wayne&#x27;s Auto Detailing in Tacoma, WA" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/dfa5d856-9a2d-4f25-9734-2d1c5de11ac8.jpeg" alt="Interior Detailing for Wayne&#x27;s Refined Auto Detailing in Tacoma, WA" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -2153,7 +2297,7 @@ Our Guarantee: Expert quality every time. We don&#x27;t consider a job done unti
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 10">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/00fc5b8a-c91a-4580-b4eb-129a50cd36c6.jpeg" alt="Interior Detailing for Wayne&#x27;s Auto Detailing in Tacoma, WA" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/00fc5b8a-c91a-4580-b4eb-129a50cd36c6.jpeg" alt="Interior Detailing for Wayne&#x27;s Refined Auto Detailing in Tacoma, WA" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -2161,7 +2305,7 @@ Our Guarantee: Expert quality every time. We don&#x27;t consider a job done unti
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 11">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/c93a7408-e490-4946-b6a7-f24eeb194b34.jpeg" alt="Interior Detailing for Wayne&#x27;s Auto Detailing in Tacoma, WA" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/c93a7408-e490-4946-b6a7-f24eeb194b34.jpeg" alt="Interior Detailing for Wayne&#x27;s Refined Auto Detailing in Tacoma, WA" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -2169,7 +2313,7 @@ Our Guarantee: Expert quality every time. We don&#x27;t consider a job done unti
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 12">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/614a9d14-fa47-40fc-b162-6614c851efd8.jpeg" alt="Interior Detailing for Wayne&#x27;s Auto Detailing in Tacoma, WA" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/614a9d14-fa47-40fc-b162-6614c851efd8.jpeg" alt="Interior Detailing for Wayne&#x27;s Refined Auto Detailing in Tacoma, WA" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -2177,7 +2321,7 @@ Our Guarantee: Expert quality every time. We don&#x27;t consider a job done unti
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 13">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/ab2418d2-cb0b-4e23-a9d5-2e4c423c555e.jpeg" alt="Interior Detailing for Wayne&#x27;s Auto Detailing in Tacoma, WA" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/ab2418d2-cb0b-4e23-a9d5-2e4c423c555e.jpeg" alt="Interior Detailing for Wayne&#x27;s Refined Auto Detailing in Tacoma, WA" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -2185,7 +2329,7 @@ Our Guarantee: Expert quality every time. We don&#x27;t consider a job done unti
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 14">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/18438d3a-6782-4af5-a746-97126d12eaa7.jpeg" alt="Interior Detailing for Wayne&#x27;s Auto Detailing in Tacoma, WA" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/18438d3a-6782-4af5-a746-97126d12eaa7.jpeg" alt="Interior Detailing for Wayne&#x27;s Refined Auto Detailing in Tacoma, WA" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -2193,7 +2337,7 @@ Our Guarantee: Expert quality every time. We don&#x27;t consider a job done unti
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 15">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/bbb5950f-d55c-40e8-bd8a-484e43b55cb5.jpeg" alt="Interior Detailing for Wayne&#x27;s Auto Detailing in Tacoma, WA" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/bbb5950f-d55c-40e8-bd8a-484e43b55cb5.jpeg" alt="Interior Detailing for Wayne&#x27;s Refined Auto Detailing in Tacoma, WA" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -2228,8 +2372,8 @@ Our Guarantee: Expert quality every time. We don&#x27;t consider a job done unti
     </div>
 </section>
 
-                    
-                    <!-- Reviews Component -->
+
+<!-- Reviews Component -->
 <section class="bg-white" id="reviews">
     <div class="px-4 py-12 mx-auto max-w-7xl sm:px-6  lg:pt-32 lg:pb-16  lg:px-8">
 
@@ -2627,8 +2771,8 @@ Our Guarantee: Expert quality every time. We don&#x27;t consider a job done unti
     </div>
 </section>
 
-                    
-                    <section class="bg-primary">
+
+<section class="bg-primary">
     <div class="px-4 py-12 mx-auto max-w-7xl sm:py-16 sm:px-6 lg:px-8">
         <div class="max-w-3xl mx-auto divide-y-[3px] divide-primary-darker">
             <h2 class="text-3xl font-extrabold text-center text-white sm:text-4xl">Frequently asked questions</h2>
@@ -2641,7 +2785,7 @@ Our Guarantee: Expert quality every time. We don&#x27;t consider a job done unti
                                 type="button"
                                 @click="expanded = !expanded"
                                 class="flex items-start justify-between w-full text-left text-white rounded  focus:outline-none focus-visible:ring-2 ring-white"
-                                aria-controls="44630"
+                                aria-controls="51194"
                                 :aria-expanded="expanded"
                             >
                             <span class="font-medium text-white">What&#x27;s the best way to reach you?</span>
@@ -2661,7 +2805,7 @@ Our Guarantee: Expert quality every time. We don&#x27;t consider a job done unti
                                 </span>
                             </button>
                         </dt>
-                        <dd x-show="expanded" x-cloak x-collapse class="pr-12" id="44630">
+                        <dd x-show="expanded" x-cloak x-collapse class="pr-12" id="51194">
                             <div aria-hidden="true" class="invisible h-2"></div>
                             <p class="mt-2 text-base text-gray-100">Give us a call or send us a text at (253) 433-1273. Thanks!</p>
                         </dd>
@@ -2674,7 +2818,7 @@ Our Guarantee: Expert quality every time. We don&#x27;t consider a job done unti
                                 type="button"
                                 @click="expanded = !expanded"
                                 class="flex items-start justify-between w-full text-left text-white rounded  focus:outline-none focus-visible:ring-2 ring-white"
-                                aria-controls="44631"
+                                aria-controls="51195"
                                 :aria-expanded="expanded"
                             >
                             <span class="font-medium text-white">Do you provide free estimates?</span>
@@ -2694,7 +2838,7 @@ Our Guarantee: Expert quality every time. We don&#x27;t consider a job done unti
                                 </span>
                             </button>
                         </dt>
-                        <dd x-show="expanded" x-cloak x-collapse class="pr-12" id="44631">
+                        <dd x-show="expanded" x-cloak x-collapse class="pr-12" id="51195">
                             <div aria-hidden="true" class="invisible h-2"></div>
                             <p class="mt-2 text-base text-gray-100">Yes, we&#x27;ll always estimate the job for free. Just give us a call to get started.</p>
                         </dd>
@@ -2707,7 +2851,7 @@ Our Guarantee: Expert quality every time. We don&#x27;t consider a job done unti
                                 type="button"
                                 @click="expanded = !expanded"
                                 class="flex items-start justify-between w-full text-left text-white rounded  focus:outline-none focus-visible:ring-2 ring-white"
-                                aria-controls="44632"
+                                aria-controls="51196"
                                 :aria-expanded="expanded"
                             >
                             <span class="font-medium text-white">How are you different?</span>
@@ -2727,7 +2871,7 @@ Our Guarantee: Expert quality every time. We don&#x27;t consider a job done unti
                                 </span>
                             </button>
                         </dt>
-                        <dd x-show="expanded" x-cloak x-collapse class="pr-12" id="44632">
+                        <dd x-show="expanded" x-cloak x-collapse class="pr-12" id="51196">
                             <div aria-hidden="true" class="invisible h-2"></div>
                             <p class="mt-2 text-base text-gray-100">We&#x27;re a customer-first company that will do whatever it takes to make sure the job is well done.</p>
                         </dd>
@@ -2739,7 +2883,7 @@ Our Guarantee: Expert quality every time. We don&#x27;t consider a job done unti
     </div>
 </section>
 
-                    <!-- Service Areas Component -->
+<!-- Service Areas Component -->
 <section class="relative my-24 bg-white">
     <!-- Decorative Grey Box -->
     <div aria-hidden="true" x-cloak x-data="{ shown: false }" x-intersect.half="shown = true" class="hidden lg:block">
@@ -2867,9 +3011,9 @@ Our Guarantee: Expert quality every time. We don&#x27;t consider a job done unti
         </div>
     </div>
 </section>
-                
-            
-                <!-- CTA Component -->
+
+
+<!-- CTA Component -->
 <section class="bg-white">
     <div class="px-4 py-12 mx-auto text-center max-w-7xl sm:px-6 lg:py-16 lg:px-8">
         <!-- Heading -->
@@ -2914,7 +3058,7 @@ Our Guarantee: Expert quality every time. We don&#x27;t consider a job done unti
     </div>
 </section>
 
-                <!-- Footer Component -->
+<!-- Footer Component -->
 <footer class="bg-primary" aria-labelledby="footer-heading">
   <h2 id="footer-heading" class="sr-only">Footer</h2>
   <div class="px-4 py-12 mx-auto max-w-7xl sm:px-6 lg:pt-16 lg:pb-10 lg:px-8">
@@ -2925,7 +3069,7 @@ Our Guarantee: Expert quality every time. We don&#x27;t consider a job done unti
               <img class="h-[80px]" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/f1aa4e70-4afd-434f-be29-0227371d0e78.jpeg" alt="" />
               
               <p class="text-base text-gray-100">
-                  Wayne&#x27;s Auto Detailing<br/>
+                  Wayne&#x27;s Refined Auto Detailing<br/>
                    
                       Tacoma, WA <br/>
                   
@@ -2933,7 +3077,7 @@ Our Guarantee: Expert quality every time. We don&#x27;t consider a job done unti
                   <!-- Is this supposed to be here and correct?  -->
                   <!-- The finest landscaping in Austin & surrounding areas. Exceptional, professional service. You are our priority! -->
               </p>
-              <div class="flex space-x-6">
+              <div class="flex flex-wrap justify-between align-middle ">
                   <!-- are these conditional? and linked to corret links? -->
                   
                   <a target="_blank" rel="noopener noreferrer" href="https://facebook.com/Waynesdetailing89" class="text-gray-100 hover:text-gray-300 focus:outline-none focus:ring-2 ring-white ring-opacity-75">
@@ -3166,45 +3310,45 @@ Our Guarantee: Expert quality every time. We don&#x27;t consider a job done unti
   </div>
 </footer>
 
-                <!-- Modal -->
+<!-- Modal -->
 <template x-teleport="body">
     <div
-        x-show="contactModalOpen"
-        @keydown.escape.prevent.stop="contactModalOpen = false"
-        role="dialog"
-        aria-modal="true"
-        x-id="['modal-title']"
-        :aria-labelledby="$id('modal-title')"
-        class="fixed inset-0 z-40 pt-8 pb-20"
-        x-trap.noscroll.inert="contactModalOpen"
+            x-show="contactModalOpen"
+            @keydown.escape.prevent.stop="contactModalOpen = false"
+            role="dialog"
+            aria-modal="true"
+            x-id="['modal-title']"
+            :aria-labelledby="$id('modal-title')"
+            class="fixed inset-0 z-40 md:pt-8 md:pb-20"
+            x-trap.noscroll.inert="contactModalOpen"
     >
         <!-- Overlay -->
         <div
-            x-show="contactModalOpen"
-            x-transition:enter="ease-out duration-300"
-            x-transition:enter-start="opacity-0"
-            x-transition:enter-end="opacity-100"
-            x-transition:leave="ease-in duration-200"
-            x-transition:leave-start="opacity-100"
-            x-transition:leave-end="opacity-0"
-            aria-hidden="true"
-            class="fixed inset-0 bg-black bg-opacity-50"
+                x-show="contactModalOpen"
+                x-transition:enter="ease-out duration-300"
+                x-transition:enter-start="opacity-0"
+                x-transition:enter-end="opacity-100"
+                x-transition:leave="ease-in duration-200"
+                x-transition:leave-start="opacity-100"
+                x-transition:leave-end="opacity-0"
+                aria-hidden="true"
+                class="fixed inset-0 bg-black bg-opacity-50"
         ></div>
         <!-- Panel -->
         <div
-            x-show="contactModalOpen"
-            x-transition:enter="ease-out duration-300"
-            x-transition:enter-start="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
-            x-transition:enter-end="opacity-100 translate-y-0 sm:scale-100"
-            x-transition:leave="ease-in duration-200"
-            x-transition:leave-start="opacity-100 translate-y-0 sm:scale-100"
-            x-transition:leave-end="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
-            @click="contactModalOpen = false"
-            class="relative flex items-center justify-center w-full h-full"
+                x-show="contactModalOpen"
+                x-transition:enter="ease-out duration-300"
+                x-transition:enter-start="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+                x-transition:enter-end="opacity-100 translate-y-0 sm:scale-100"
+                x-transition:leave="ease-in duration-200"
+                x-transition:leave-start="opacity-100 translate-y-0 sm:scale-100"
+                x-transition:leave-end="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+                @click="contactModalOpen = false"
+                class="relative flex items-center justify-center w-full h-full sm:h-max"
         >
             <div
-                @click.stop
-                class="flex flex-col w-full max-h-full pb-3 mx-6 overflow-hidden text-left align-bottom transition-all transform bg-white rounded-lg shadow-xl  sm:px-0 sm:my-8 sm:align-middle sm:max-w-sm"
+                    @click.stop
+                    class="flex flex-col w-full h-full overflow-hidden text-left align-bottom transition-all transform bg-white rounded-lg shadow-xl sm:px-0 sm:my-0 sm:align-middle sm:max-w-3xl"
             >
                 <!-- Header -->
                 <div class="relative px-6 bg-white">
@@ -3213,239 +3357,235 @@ Our Guarantee: Expert quality every time. We don&#x27;t consider a job done unti
                     <!-- Small overlay for scrolling area  -->
                     <div aria-hidden="true" class="absolute inset-x-0 h-8 -bottom-8 bg-gradient-to-b from-white"></div>
                     <button
-                        @click="contactModalOpen = false;"
-                        class="absolute p-1 transition rounded  top-5 right-5 hover:bg-gray-100 focus-visible:ring-2 focus:outline-none ring-primary ring-opacity-75 ring-offset-2"
+                            @click="contactModalOpen = false;"
+                            class="absolute p-1 transition rounded  top-5 right-5 hover:bg-gray-100 focus-visible:ring-2 focus:outline-none ring-primary ring-opacity-75 ring-offset-2"
                     >
                         <span class="sr-only">Close modal</span>
                         <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
                         </svg>
                     </button>
                 </div>
 
                 <!-- Form -->
-                <form class="flex-grow overflow-x-hidden overflow-y-auto">
-                    <div class="h-full px-6 pb-1 mt-6 space-y-6">
-                        <!-- Full Name -->
-                        <div>
-                            <label for="contact-full-name" class="sr-only">Full Name</label>
-                            <input
-                                required
-                                type="text"
-                                name="full-name"
-                                id="contact-full-name"
-                                class="block w-full border-gray-300 py-2.5 rounded-md shadow-sm focus:ring-primary focus:border-primary sm:text-sm"
-                                placeholder="Full Name"
-                            />
-                        </div>
-                        <!-- Number -->
-                        <div>
-                            <label for="contact-phone-number" class="sr-only">Phone Number</label>
-                            <input
-                                type="tel"
-                                name="phone-number"
-                                id="contact-phone-number"
-                                class="block w-full border-gray-300 py-2.5 rounded-md shadow-sm focus:ring-primary focus:border-primary sm:text-sm"
-                                placeholder="Phone Number"
-                            />
-                        </div>
-                        <!-- Email -->
-                        <div>
-                            <label for="contact-email" class="sr-only">Email</label>
-                            <input
-                                required
-                                type="email"
-                                name="email"
-                                id="contact-email"
-                                class="block w-full border-gray-300 py-2.5 rounded-md shadow-sm focus:ring-primary focus:border-primary sm:text-sm"
-                                placeholder="Email"
-                            />
-                        </div>
-                        <!-- Address -->
-                        <div>
-                            <label for="contact-address" class="sr-only">Address</label>
-                            <input
-                                type="text"
-                                name="address"
-                                id="contact-address"
-                                class="block w-full border-gray-300 py-2.5 rounded-md shadow-sm focus:ring-primary focus:border-primary sm:text-sm"
-                                placeholder="Address"
-                            />
-                        </div>
-                        <!-- Preferred date of service
-                        <div>
-                            <label for="contact-date" class="sr-only">Preferred Date of Service</label>
-                            <input
-                                type="date"
-                                name="date"
-                                id="contact-date"
-                                class="block w-full border-gray-300 py-2.5 rounded-md shadow-sm focus:ring-primary focus:border-primary sm:text-sm"
-                                placeholder="Preferred Date of Service"
-                            />
-                        </div> -->
-                        <!-- Promo Code -->
-                        <!-- <div>
-                            <label for="contact-promo-code" class="sr-only">Promo Code</label>
-                            <input
-                                type="text"
-                                name="promo-code"
-                                id="contact-promo-code"
-                                class="block w-full border-gray-300 py-2.5 rounded-md shadow-sm focus:ring-primary focus:border-primary sm:text-sm"
-                                placeholder="Promo Code"
-                            />
-                        </div> -->
-                        <!-- How can we help you? (Concern) -->
-                        <div>
-                            <label for="contact-concern" class="sr-only">How can we help you?</label>
-                            <textarea
-                                required
-                                id="contact-concern"
-                                name="concern"
-                                rows="4"
-                                class="block py-2.5 w-full border border-gray-300 rounded-md shadow-sm focus:ring-primary focus:border-primary sm:text-sm"
-                                placeholder="How can we help you?"
-                            ></textarea>
-                        </div>
-                        <!-- <fieldset>
-                            <legend class="text-base font-medium text-gray-900">Services</legend>
-                            <div class="mt-2.5 grid gap-y-3.5 grid-cols-2">
-                                4
-                                
-                                    <div class="flex items-center">
-                                        <input
-                                            id="contact-service-157436"
-                                            name="157436"
-                                            type="checkbox"
-                                            class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
-                                        />
-                                        <label for="contact-label-service-157436" class="ml-3 text-sm font-medium text-gray-700">Interior Detailing</label>
-                                    </div>
-                                
-                                    <div class="flex items-center">
-                                        <input
-                                            id="contact-service-157437"
-                                            name="157437"
-                                            type="checkbox"
-                                            class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
-                                        />
-                                        <label for="contact-label-service-157437" class="ml-3 text-sm font-medium text-gray-700">Maintenance Wash</label>
-                                    </div>
-                                
-                                    <div class="flex items-center">
-                                        <input
-                                            id="contact-service-157438"
-                                            name="157438"
-                                            type="checkbox"
-                                            class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
-                                        />
-                                        <label for="contact-label-service-157438" class="ml-3 text-sm font-medium text-gray-700">Exterior Detailing</label>
-                                    </div>
-                                
-                                    <div class="flex items-center">
-                                        <input
-                                            id="contact-service-157439"
-                                            name="157439"
-                                            type="checkbox"
-                                            class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
-                                        />
-                                        <label for="contact-label-service-157439" class="ml-3 text-sm font-medium text-gray-700">Full Detail Service</label>
-                                    </div>
-                                
+
+                <form class="overflow-y-scroll pb-20 sm:w-full">
+                    <div class="flex-grow h-full overflow-x-hidden overflow-y-auto">
+                        <div class="h-full px-6 pb-1 mt-6 space-y-6 sm:grid sm:grid-cols-2 sm:min-w-max sm:space-x-3">
+                            <!-- Full Name -->
+                            
+                            <div class="sm:ml-3 sm:transform sm:translate-y-6">
+                                <label for="contact-full-name" class="sr-only">Full Name</label>
+                                <input
+                                        required
+                                        type="text"
+                                        name="full-name"
+                                        id="contact-full-name"
+                                        class="block w-full border-gray-300 py-2.5 rounded-md shadow-sm focus:ring-primary focus:border-primary sm:text-sm"
+                                        placeholder="Full Name"
+                                />
                             </div>
-                        </fieldset> -->
-                        <!-- Photo Upload -->
-                        <!-- <div
-                            x-data="{
-                            imageUrl: '',
-                            fileTooLarge: false,
-                            fileChosen(event) {
-                                if (this.isProperlySized(event)) {
-                                    this.fileToDataUrl(event, (src) => (this.imageUrl = src));
-                                    this.fileTooLarge = false;
-                                }
-                                else
-                                    this.fileTooLarge = true;
-                            },
-                            fileToDataUrl(event, callback) {
-                                if (!event.target.files.length) return;
-                                let file = event.target.files[0],
-                                    reader = new FileReader();
-                                reader.readAsDataURL(file);
-                                reader.onload = (e) => callback(e.target.result);
-                            },
-                            isProperlySized(event) {
-                                const files = event.currentTarget.files;
-                                for (const file in files) {
-                                    const filesize = ((files[file].size/1024)/1024).toFixed(4);
-                                    if (filesize > 2)
-                                        return false;
-                                }
-                                return true;
-                            },
-                        }"
-                        >
-                            <label class="block text-sm font-medium text-gray-700">Share a photo</label>
-                            <div x-show="imageUrl !== ''" x-collapse>
-                                <div class="flex flex-col items-center space-y-2 sm:space-y-0 sm:flex-row sm:space-x-5">
-                                    <img :src="imageUrl" class="object-cover rounded-md w-[200px] h-[140px]" />
-                                    <button
-                                        @click="imageUrl = ''; $refs.fileInput.value = '';"
-                                        type="button"
-                                        class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md shadow-sm  hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-                                    >
-                                        Change
-                                    </button>
-                                </div>
+                            
+                            <!-- Number -->
+                            
+                            <div>
+                                <label for="contact-phone-number" class="sr-only">Phone Number</label>
+                                <input
+                                        type="tel"
+                                        name="phone-number"
+                                        id="contact-phone-number"
+                                        class="block w-full border-gray-300 py-2.5 rounded-md shadow-sm focus:ring-primary focus:border-primary sm:text-sm"
+                                        placeholder="Phone Number"
+                                />
                             </div>
-                            <div x-show="imageUrl === ''" x-collapse>
-                                <div
-                                    x-on:dragenter.prevent.stop
-                                    x-on:dragleave.prevent.stop
-                                    class="flex justify-center px-6 pt-5 pb-6 mt-1 border-2 border-dashed rounded-md"
-                                >
-                                    <div class="space-y-1 text-center">
-                                        <svg class="w-12 h-12 mx-auto text-gray-400" stroke="currentColor" fill="none" viewBox="0 0 48 48" aria-hidden="true">
-                                            <path
-                                                d="M28 8H12a4 4 0 00-4 4v20m32-12v8m0 0v8a4 4 0 01-4 4H12a4 4 0 01-4-4v-4m32-4l-3.172-3.172a4 4 0 00-5.656 0L28 28M8 32l9.172-9.172a4 4 0 015.656 0L28 28m0 0l4 4m4-24h8m-4-4v8m-12 4h.02"
-                                                stroke-width="2"
-                                                stroke-linecap="round"
-                                                stroke-linejoin="round"
+                            
+                            <!-- Email -->
+                            
+                            <div>
+                                <label for="contact-email" class="sr-only">EmailTrue</label>
+                                <input
+                                        required
+                                        type="email"
+                                        name="email"
+                                        id="contact-email"
+                                        class="block w-full border-gray-300 py-2.5 rounded-md shadow-sm focus:ring-primary focus:border-primary sm:text-sm"
+                                        placeholder="Email"
+                                />
+                            </div>
+                            
+
+                            <!-- Address -->
+                            
+                            <div>
+                                <label for="contact-address" class="sr-only">Address</label>
+                                <input
+                                        type="text"
+                                        name="address"
+                                        id="contact-address"
+                                        class="block w-full border-gray-300 py-2.5 rounded-md shadow-sm focus:ring-primary focus:border-primary sm:text-sm"
+                                        placeholder="Address"
+                                />
+                            </div>
+                            
+                            <!-- Preferred date of service-->
+                            
+                            <div>
+                                <label for="contact-date" class="sr-only">Preferred Date of Service</label>
+                                <input
+                                        type="date"
+                                        name="date"
+                                        id="contact-date"
+                                        class="block w-full border-gray-300 py-2.5 rounded-md shadow-sm focus:ring-primary focus:border-primary sm:text-sm"
+                                        placeholder="Preferred Date of Service"
+                                />
+                            </div>
+                            
+                            <!--                        Promo Code-->
+                            
+                            <div class='sm:col-span-2'>
+                                
+                                <fieldset class="hidden sm:block sm:mb-3">
+                                    <legend class="text-base font-medium text-gray-900">Services</legend>
+                                    <div class="my-2.5 grid gap-y-3.5 grid-cols-2 ">
+                                        
+                                        <div class="flex items-center">
+                                            <input
+                                                    id="contact-service-174383"
+                                                    name="174383"
+                                                    type="checkbox"
+                                                    class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
+                                                    value="Interior Detailing"
                                             />
-                                        </svg>
-                                        <div class="flex justify-center text-sm text-gray-600">
-                                            <label
-                                                for="file-upload"
-                                                class="relative font-medium bg-white rounded-md cursor-pointer  text-secondary hover:text-secondary-darker focus-within:outline-none focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-primary"
-                                            >
-                                                <span>Upload a file</span>
-                                                <input
-                                                    x-ref="fileInput"
-                                                    id="file-upload"
-                                                    name="file-upload"
-                                                    type="file"
-                                                    accept="image/*"
-                                                    class="sr-only"
-                                                    @change="fileChosen"
-                                                />
-                                            </label>
+                                            <label for="contact-label-service-174383" class="ml-3 text-sm font-medium text-gray-700">Interior Detailing</label>
                                         </div>
-                                        <p class="text-xs text-gray-500">PNG, JPG, GIF up to 2MB</p>
+                                        
+                                        <div class="flex items-center">
+                                            <input
+                                                    id="contact-service-174384"
+                                                    name="174384"
+                                                    type="checkbox"
+                                                    class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
+                                                    value="Maintenance Wash"
+                                            />
+                                            <label for="contact-label-service-174384" class="ml-3 text-sm font-medium text-gray-700">Maintenance Wash</label>
+                                        </div>
+                                        
+                                        <div class="flex items-center">
+                                            <input
+                                                    id="contact-service-174385"
+                                                    name="174385"
+                                                    type="checkbox"
+                                                    class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
+                                                    value="Exterior Detailing"
+                                            />
+                                            <label for="contact-label-service-174385" class="ml-3 text-sm font-medium text-gray-700">Exterior Detailing</label>
+                                        </div>
+                                        
+                                        <div class="flex items-center">
+                                            <input
+                                                    id="contact-service-174386"
+                                                    name="174386"
+                                                    type="checkbox"
+                                                    class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
+                                                    value="Full Detail Service"
+                                            />
+                                            <label for="contact-label-service-174386" class="ml-3 text-sm font-medium text-gray-700">Full Detail Service</label>
+                                        </div>
+                                        
                                     </div>
+                                </fieldset>
+                                
+                                <div>
+                                <!-- How can we help you? (Concern) -->
+                                
+                                <div class='sm:flex sm:flex-1 sm:mt-3 sm:space-x-3'>
+                                <div class='sm:flex-grow'>
+                                    <label for="contact-concern" class="sr-only">How can we help you?</label>
+                                    <textarea
+                                            required
+                                            id="contact-concern"
+                                            name="concern"
+                                            rows="4"
+                                            class="block py-3.5 px-2.5 w-full border border-gray-300 rounded-md shadow-sm focus:ring-primary focus:border-primary sm:text-sm"
+                                            placeholder="How can we help you?"
+                                    ></textarea>
                                 </div>
+                                
+                                <!-- Services -->
+                                
+                                
+                                <fieldset class="sm:hidden my-3 sm:mb-0">
+                                    <legend class="text-base font-medium text-gray-900">Services</legend>
+                                    <div class="mt-2.5 grid gap-y-3.5 grid-cols-2 sm:flex sm:space-x-6">
+
+                                        
+                                        <div class="flex items-center">
+                                            <input
+                                                    id="contact-service-174383"
+                                                    name="174383"
+                                                    type="checkbox"
+                                                    class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
+                                                    value="Interior Detailing"
+                                            />
+                                            <label for="contact-label-service-174383" class="ml-3 text-sm font-medium text-gray-700">Interior Detailing</label>
+                                        </div>
+                                        
+                                        <div class="flex items-center">
+                                            <input
+                                                    id="contact-service-174384"
+                                                    name="174384"
+                                                    type="checkbox"
+                                                    class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
+                                                    value="Maintenance Wash"
+                                            />
+                                            <label for="contact-label-service-174384" class="ml-3 text-sm font-medium text-gray-700">Maintenance Wash</label>
+                                        </div>
+                                        
+                                        <div class="flex items-center">
+                                            <input
+                                                    id="contact-service-174385"
+                                                    name="174385"
+                                                    type="checkbox"
+                                                    class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
+                                                    value="Exterior Detailing"
+                                            />
+                                            <label for="contact-label-service-174385" class="ml-3 text-sm font-medium text-gray-700">Exterior Detailing</label>
+                                        </div>
+                                        
+                                        <div class="flex items-center">
+                                            <input
+                                                    id="contact-service-174386"
+                                                    name="174386"
+                                                    type="checkbox"
+                                                    class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
+                                                    value="Full Detail Service"
+                                            />
+                                            <label for="contact-label-service-174386" class="ml-3 text-sm font-medium text-gray-700">Full Detail Service</label>
+                                        </div>
+                                        
+                                    </div>
+                                </fieldset>
+                                
+                                <!-- Photo Upload -->
+                                
                             </div>
-                            <p x-show="fileTooLarge" class="mt-2 text-sm text-red-600">
-                                The selected file is too large. Please reduce the size or choose another file.
-                            </p>
-                        </div> -->
-                        <div
-                        onclick= "send_sms('Wayne*$!s-Auto-Detailing')" 
-                            class="
-                                inline-flex
+                            </div>
+                        </div>
+                    </div>
+
+                </form>
+                <div class="flex
                                 items-center
                                 justify-center
                                 w-full
-                                px-5
+                            "
+                     onclick="send_sms('Wayne*$!s-Auto-Detailing')"
+                >
+                    <button class="
                                 py-2.5
+                                w-4/5
+                                fixed
+                                bottom
                                 text-sm
                                 font-medium
                                 transition
@@ -3457,19 +3597,23 @@ Our Guarantee: Expert quality every time. We don&#x27;t consider a job done unti
                                 hover:bg-primary-darker
                                 bg-primar
                                 focus-visible:ring-2
-                                ring-primary ring-opacity-75 ring-offset-2
-                            "
-                        >
-                            Send
-                    </div>
-                    </div>
-                </form>
+                                ring-primary ring-opacity-75 ring-offset-2" 
+                                style="
+                                position:absolute;
+                                left: 50%;
+                                bottom: 0;
+                                transform: translate(-50%, -50%);
+                                margin-top: 0;
+                                margin-bottom: 0"> Send
+                    </button>
+                </div>
+
+
             </div>
         </div>
     </div>
 </template>
-
-                <!-- Modal -->
+<!-- Modal -->
 <template x-teleport="body">
     <div x-show="reviewModalOpen" @keydown.escape.prevent.stop="reviewModalOpen = false" role="dialog" aria-modal="true" x-id="['modal-title']" :aria-labelledby="$id('modal-title')" class="fixed inset-0 z-40 pt-8 pb-20" x-trap.noscroll.inert="reviewModalOpen">
         <!-- Overlay -->
@@ -3518,28 +3662,28 @@ Our Guarantee: Expert quality every time. We don&#x27;t consider a job done unti
         </div>
     </div>
 </template>
- 
-    
 
-        <!-- <div x-data="{ open: false }">
-            <button @click="open = true">Open Dialogue</button>
 
-            <span x-show="open" x-trap.inert.noscroll="open">
+
+<!-- <div x-data="{ open: false }">
+    <button @click="open = true">Open Dialogue</button>
+
+    <span x-show="open" x-trap.inert.noscroll="open">
+        ...
+
+        <div x-data="{ open: false }">
+            <button @click="open = true">Open Nested Dialogue</button>
+
+            <span x-show="open" x-trap="open">
                 ...
 
-                <div x-data="{ open: false }">
-                    <button @click="open = true">Open Nested Dialogue</button>
-
-                    <span x-show="open" x-trap="open">
-                        ...
-
-                        <button @click="open = false">Close Nested Dialogue</button>
-                    </span>
-                </div>
-
-                <button @click="open = false">Close Dialogue</button>
+                <button @click="open = false">Close Nested Dialogue</button>
             </span>
         </div>
-        <p>Nostrud eu amet nostrud id ut cillum sint minim anim Lorem nulla nisi cillum commodo. Dolor exercitation incididunt et velit qui ea nisi. Do consectetur in ex adipisicing. Irure id aute non nulla eiusmod incididunt deserunt labore amet. Consequat proident nisi amet est consequat sunt eiusmod aute ut exercitation amet. Eu eu Lorem minim duis culpa sit qui nostrud irure aliquip irure occaecat. Duis eu duis id veniam.</p> -->
-    </body>
+
+        <button @click="open = false">Close Dialogue</button>
+    </span>
+</div>
+<p>Nostrud eu amet nostrud id ut cillum sint minim anim Lorem nulla nisi cillum commodo. Dolor exercitation incididunt et velit qui ea nisi. Do consectetur in ex adipisicing. Irure id aute non nulla eiusmod incididunt deserunt labore amet. Consequat proident nisi amet est consequat sunt eiusmod aute ut exercitation amet. Eu eu Lorem minim duis culpa sit qui nostrud irure aliquip irure occaecat. Duis eu duis id veniam.</p> -->
+</body>
 </html>
